@@ -14,7 +14,9 @@ SECRET_KEY = 'tk$i&&s(v*wu3l1$)p7*2@4w#d0dxev6%8v6$e$e!kf=j7y==_'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
-
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates/'),
+)
 ALLOWED_HOSTS = ['*']
 
 
@@ -27,6 +29,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'debug_toolbar',
+    'imagestore',
+    'sorl.thumbnail',
+    'tagging',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -36,6 +43,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'picpost.urls'
@@ -64,9 +72,7 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
