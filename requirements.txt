@@ -1,3 +1,4 @@
+chardet==3.0.4
 dj-database-url==0.5.0
 dj-static==0.0.6
 Django==2.1
@@ -6,6 +7,7 @@ django-debug-toolbar==1.9.1
 django-tagging==0.4.6
 django-toolbelt==0.0.1
 gunicorn==19.9.0
+imagestore==3.1.0
 Pillow==5.2.0
 psycopg2==2.7.5
 psycopg2-binary==2.7.5
@@ -16,3 +18,4 @@ sorl-thumbnail==12.4.1
 sqlparse==0.2.4
 static==1.1.1
 static3==0.7.0
+swapper==1.1.0
